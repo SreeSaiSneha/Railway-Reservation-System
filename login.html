@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <!--<script>
+        function checkLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email === "" || password === "") {
+                alert("Please enter all details.");
+                return false; // Prevent form submission
+            } else {
+                alert("You are logged in!");
+                document.getElementById("email").value = ""; // Clear email field
+                document.getElementById("password").value = ""; // Clear password field
+                return false; // Prevent form submission
+
+            }
+        }
+        function signupUser() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confirmpassword").value;
+        
+            if (name === "" || email === "" || password === "" || confirmpassword === "") {
+                alert("Please enter all details.");
+                return false; // Prevent form submission
+            }
+        
+            if (password !== confirmpassword) {
+                alert("Passwords do not match. Please enter the same password again.");
+                return false; // Prevent form submission
+            }
+        
+            alert("Signed in!"); // Display signup message
+            document.getElementById("name").value = ""; // Clear name field
+            document.getElementById("email").value = ""; // Clear email field
+            document.getElementById("password").value = ""; // Clear password field
+            document.getElementById("confirmpassword").value = ""; // Clear confirm password field
+            
+            // Redirect to login page
+            window.location.href = "#loginpage";
+        
+            return false; // Prevent form submission
+        }
+            </script>-->
+</head>
+<body class="body">
+    <div class="box">
+        <h1 class="h1">Login Form</h1><br><br>
+        <table class="table" >
+            <tr>
+                <td><a href="#loginpage" style="text-decoration: none;">Login</a></td>
+            </tr>
+        </table>
+        <table class="table1" >
+            <tr>
+                <td><a href="#signup" style="text-decoration: none;">Signup</a></td>
+            </tr>
+        </table><br><br><br>
+        <section id="loginpage">
+            <form action="login.php" method="post">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" class="input"><br><br>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" class="input"><br><br>
+                    <input type="button" value="login" class="button"><br><br>
+                    <a href="index.html"><input type="button" value="back" class="button"/></a>
+            </form>
+        </section>
+        <section id="signup" method="post">
+            <form action="register.php" method="post">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email Address" class="input"><br><br>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Password" class="input"><br><br>
+                <label for="confirmpassword"></label>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirmpassword" class="input"><br><br>
+                <input type="submit" value="Signup" class="button">
+        </form>
+        </section>
+    </div>
+
+</body>
+</html>

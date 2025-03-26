@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+    <style>
+    </style>
+</head>
+<body class="body">
+    <div class="div">
+    <form id="bookingForm">
+        <label for="name" class="input">Name:</label><br>
+        <input type="text" id="name" name="name" class="input2" placeholder="Enter Name"><br><br>
+        
+        <label for="age" class="input">Age:</label><br>
+        <input type="number" id="age" name="age" class="input2" placeholder="Enter Age"><br><br>
+        
+        <label for="gender" class="input">Gender:</label><br>
+        <select id="gender" name="gender" class="input2">
+            <option value="male" class="input2">Male</option>
+            <option value="female" class="input2">Female</option>
+            <option value="other" class="inpu2t">Other</option>
+        </select><br><br>
+        
+        <label for="source" class="input">Source:</label><br>
+        <input type="text" id="source" name="source" class="input2" placeholder="Enter source city"><br><br>
+        
+        <label for="destination" class="input">Destination:</label><br>
+        <input type="text" id="destination" name="destination" class="input2" placeholder="Enter destination city"><br><br>
+        
+        <button type="button" onclick="bookTicket()" class="button" style="text-align: center;"><a href="booking.html" style="text-decoration: none; color:black">Book Ticket</a></button><br><br>
+
+        <a href="index.html"><button type="button" name="back" class="button1" style="text-align: center;">Back</button></a>
+    </form>
+</div>
+    <script>
+        function bookTicket() {
+            // Retrieve form inputs
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var gender = document.getElementById("gender").value;
+            var source = document.getElementById("source").value;
+            var destination = document.getElementById("destination").value;
+            
+            // Check if any field is empty
+            if (name === "" || age === "" || gender === "" || source === "" || destination === "") {
+                // Show an alert if any field is empty
+                alert("Please enter all details.");
+            } else {
+                // If all fields are filled, show an alert indicating ticket is booked
+                alert("Ticket is booked!");
+            }
+        }
+    </script>
+</body>
+</html>

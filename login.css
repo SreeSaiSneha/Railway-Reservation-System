@@ -1,0 +1,95 @@
+.body{
+    background: url('loginpagetrain.jpg');
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: 0px -130px;
+}   
+.box{
+    background-color: white;
+    width:30%;
+    margin-top: 100px;
+    margin-left: 550px;
+    border-radius: 5px;
+    height: 500px;
+    border:2px solid white;
+}
+.h1{
+    margin-left: 130px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 20px;
+}
+.table{
+    border: 2px solid black;
+    margin-left: 120px;
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.table:hover{
+    background-color: black;
+    color: white;
+}
+.table1{
+    border: 2px solid black;
+    margin-left: 228px;
+    margin-top: -35px;
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input{
+    border-radius: 8px;
+    border-color:black ;
+    width: 500;
+    height:35;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 110px;
+}
+.table1:hover{
+    background-color: black;
+    color: white;
+}
+.button{
+    border-radius: 8px;
+    border-color:black ;
+    background-color:#76D7C4 ;
+    width: 500;
+    height:35;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 180px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.signup{
+    border-radius: 8px;
+    border-color:black ;
+    background-color:#76D7C4 ;
+    width: 500;
+    height:35;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 180px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#loginpage,
+#signup {
+    display: none;
+}
+
+/* Show the respective section when targeted */
+#loginpage:target {
+    display: block;
+}
+
+#signup:target {
+    display: block;
+}

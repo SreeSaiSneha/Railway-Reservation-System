@@ -1,0 +1,42 @@
+.body{
+    background-color: black;
+}
+.h1{
+    color:#01DFA5 ;
+    margin-top: 80px;
+    /*margin-left: 600px;*/
+}
+.b{
+    color: #01DFA5 ;
+}
+.input{
+    border-radius: 8px;
+    border-color:#01DFA5 ;
+    width: 500;
+    height:35;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -42px;
+}
+.input1{
+    border-radius: 8px;
+    border-color:#01DFA5 ;
+    width: 500;
+    height:200;
+    padding: 10px;
+    padding-bottom: 150px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    background-color: #01DFA5;
+    border-radius: 8px;
+    width: 500;
+    height:35;
+    padding: 3px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
